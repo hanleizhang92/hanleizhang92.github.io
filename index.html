@@ -3,51 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Researcher</title>
+    <title>Hanlei Zhang - Senior Engineer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
             background-color: #f4f4f4;
+            display: flex;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        header {
-            text-align: center;
-            padding: 20px;
+        .sidebar {
+            width: 25%;
             background: #333;
             color: white;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
         }
-        section {
-            margin: 20px 0;
+        .sidebar h1, .sidebar p, .sidebar a {
+            color: white;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-left: 30%;
+            width: 65%;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
         }
-        .contact a {
-            color: #333;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
-    <header>
+    <div class="sidebar">
         <h1>Your Name</h1>
         <p>Researcher | Computer Science | AI & Machine Learning</p>
-    </header>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        <p>Google Scholar: <a href="#">[Profile Link]</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    </div>
 
-    <div class="container">
+    <div class="content">
         <section id="about">
             <h2>About Me</h2>
             <p>I am a researcher specializing in AI, machine learning, and hardware co-design. My work focuses on developing intelligent systems for efficient computation.</p>
@@ -77,14 +80,6 @@
                 <li><b>Project 1:</b> AI-based Defect Detection <a href="#">[More Info]</a></li>
                 <li><b>Project 2:</b> FPGA-based Neural Network Acceleration <a href="#">[More Info]</a></li>
             </ul>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-            <p>Google Scholar: <a href="#">[Profile Link]</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
         </section>
     </div>
 </body>
